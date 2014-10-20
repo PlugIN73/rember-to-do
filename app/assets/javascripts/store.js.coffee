@@ -2,6 +2,7 @@
 # http://emberjs.com/guides/models/pushing-records-into-the-store/
 
 RemberToDo.Store = DS.Store.extend({
+  adapter: '-active-model'
 
 })
 

@@ -1,0 +1,10 @@
+%script{:type => "text/x-handlebars", "data-template-name" => "todo-list"}
+  %ul#todo-list
+    = hb 'each' do
+      %li
+        = hb 'title'
+  {{outlet}}
+
+%script{"data-template-name" => "todos", :type => "text/x-handlebars"}
+  {{todo-input id="new-todo" type="text" value=newTitle action="createTodo" placeholder="What needs to be done?"}}
+  {{outlet}}
