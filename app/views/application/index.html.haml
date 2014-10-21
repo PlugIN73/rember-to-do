@@ -3,6 +3,8 @@
     = hb 'each' do
       %li
         = hb 'title'
+        %a{:_action => 'removeTodo'}
+          delete
   {{outlet}}
 
 %script{"data-template-name" => "todos", :type => "text/x-handlebars"}

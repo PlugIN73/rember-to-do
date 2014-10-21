@@ -1,7 +1,7 @@
 # http://emberjs.com/guides/models/#toc_store
 # http://emberjs.com/guides/models/pushing-records-into-the-store/
 
-RemberToDo.Store = DS.Store.extend({
+RemberToDo.ApplicationStore = DS.Store.extend({
   adapter: '-active-model'
 
 })

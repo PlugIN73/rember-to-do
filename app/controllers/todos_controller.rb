@@ -19,7 +19,7 @@ class TodosController < ApplicationController
   end
 
   def destroy
-    respond_with Todo.destroy(params[:id])
+    respond_with Todo.where(id: params[:id]).destroy
   end
 
   private
